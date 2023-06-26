@@ -1,5 +1,6 @@
 import React from 'react'
 import './Categories.css'
+import Button from './Button'
 import { FaBars } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -18,15 +19,59 @@ const Categories = () => {
         <a href="">Rifles</a>
         <a href="">Shotguns</a>
       </div>
-      
-      <div className="beretta">
+
+      <Swiper className="mySwiper"
+       autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay]}
+      breakpoints={{
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 50,
+        },
+      }}>
+        <SwiperSlide>      
+          <div className="beretta">
             <div className="beretta-text">
               <h1>BERETTA</h1>
               <h4>MODEL 92 FS INOX</h4>
               <h3>$370.00</h3>
-              <button>Shop Now</button>
+              <Button butonunIcindekiDeyer="SHOP NOW" klasAdi="cg-button"/>
+            </div>
+          </div></SwiperSlide>
+        <SwiperSlide>
+        <div className="steiner">
+            <div className="steiner-text">
+              <h1>STEINER</h1>
+              <h4>AZ830 BINOCULAR</h4>
+              <h3>$370.00</h3>
+              <Button butonunIcindekiDeyer="SHOP NOW" klasAdi="cg-button"/>
             </div>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="special">
+            <div className="special-text">
+              <h3>SPECIAL OFFER</h3>
+              <h1>GET 25% OFF</h1>
+              <h4>WHEN YOUR SPEND $500 <br/> ON HANDGUNS</h4>
+              <Button butonunIcindekiDeyer="SHOP NOW" klasAdi="cg-button"/>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+      
+
 
     </div>
   )
