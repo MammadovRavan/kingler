@@ -1,0 +1,72 @@
+body{
+    background-color: #121215;
+}
+.main-section{
+    display: flex;
+    height: 530px;
+    justify-content: center !important;
+    padding-top: 70px;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    width: 300px !important;
+    padding-right: 30px;
+}
+.categories a{
+    text-decoration: none;
+    height: 49px;
+    background-color: #1d1e23;
+    padding-top: 14px;
+    padding-left: 14px;
+    color: #fff;
+    width: 100%;
+    /* height: 100%; */
+    padding-bottom: 14px;
+    border-bottom: 0.1px solid #282a2e;
+}
+
+
+.icon-categories{
+    font-size: 14px;
+    color:#fff;
+    margin-right: 10px;
+}
+.categories h1{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 56px;
+    background-color: #fea526;
+    margin-bottom:0 ;
+    font-size: 18px;
+    padding-left: 14px;
+}
+.beretta{
+    background-image: url('https://res.cloudinary.com/dmqymruko/image/upload/v1687713423/beretta_hkfmyh.jpg');
+    width: 800px;
+    height: 400px;
+
+}
+.beretta-text{
+text-align: center;
+padding-top: 60px;
+padding-right: 400px;
+}
+.beretta-text h1{
+    font-size: 51px;
+    font-weight: 700;
+    color: #fff;
+}
+.beretta-text h4{
+    color: #fff;
+    font-size: 19px; 
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.beretta-text h3{
+    font-size: 34px;
+    padding-bottom: 15px;
+    color: #fea526;
+}
+
