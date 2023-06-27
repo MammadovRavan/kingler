@@ -39,5 +39,26 @@ flex-wrap: wrap;
     justify-content: center;
     padding: 80px 0  ;
 }
+@media(max-width:650px){
+    .products-section> .top-side h1{
+        font-size: 40px;
+    }
 
+    .products-section> .top-side h3{
+        font-size: 13px;
+        letter-spacing: 2px;
+        line-height: 20px;
+    }
+}
+@media(max-width:400px){
+    .products-section> .top-side h1{
+        font-size: 30px;
+    }
+
+    .products-section> .top-side h3{
+        font-size: 11px;
+        letter-spacing: 1px;
+        line-height: 15px;
+    }
+}
 
