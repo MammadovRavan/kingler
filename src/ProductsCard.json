@@ -1,0 +1,28 @@
+[
+{
+"id":1,
+"information":"Hi-Point Compact 9mm 3.5″ Black Poly Grip/Frame Black",
+"cost":"$251.00",
+"ikon":"https://res.cloudinary.com/dmqymruko/image/upload/v1687864475/product1_jynvm9.jpg"
+
+},
+{
+    "id":2,
+    "information":"Sig Sauer 1911-22-OD 1911 Olive Drab 10+1 22LR",
+    "cost":"$251.00",
+    "ikon":"https://res.cloudinary.com/dmqymruko/image/upload/v1687864472/product2_hhpnqq.jpg"
+},
+{
+    "id":3,
+"information":"Glock PI4350201 G43 Double 9mm 3.4″ FS Integral Grip Black",
+"cost":"$251.00",
+"ikon":"https://res.cloudinary.com/dmqymruko/image/upload/v1687864470/product3_dbrkrc.jpg"
+},
+{
+    "id":4,
+"information":"Beretta JMN9S15CTC BU9 Nano 6+1 9mm 3.07″",
+"cost":"$251.00",
+"ikon":"https://res.cloudinary.com/dmqymruko/image/upload/v1687864466/product4_dn7dq2.jpg"
+}
+
+]

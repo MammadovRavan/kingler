@@ -1,0 +1,27 @@
+.kart{
+    background-color: #fff;
+    border: 1px solid #eaeaeb;
+    text-align: center;
+    width: 300px;
+    min-width: 200px;
+    flex-wrap: wrap;
+}
+.kart img{
+width: 200px;
+
+
+}
+.kart h2{
+    font-size: 14px;
+    font-weight: 400;
+    transition: .3s ease;
+    color: #1d1e23;
+    padding-bottom: 15px;
+}
+.kart h2:hover{
+    color: #fea526;
+}
+.kart h3{
+    font-size: 20px;
+    font-weight: 700;
+}

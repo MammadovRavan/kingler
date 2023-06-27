@@ -1,0 +1,43 @@
+
+
+.products-section> .top-side h1{
+    color: #1d1e23;
+    font-size: 50px;
+    font-weight: 700;
+}
+.products-section> .top-side span{
+font-weight: 300;
+}
+.products-section> .top-side h2{
+    color: #fea526;
+    font-weight: 700;
+
+}
+.products-section> .top-side h3{
+    color: #4a4b4f;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.products-section> .top-side{
+    text-align: center;
+    padding-top: 40px;
+}
+.products-section> .bottom-side{
+min-width: 200px;
+flex-wrap: wrap;
+}
+.products-section{
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://res.cloudinary.com/dmqymruko/image/upload/v1687860291/white_yh5uu4.jpg");
+    padding: 0 50px;
+}
+.products-section> .bottom-side{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0  ;
+}
+
+

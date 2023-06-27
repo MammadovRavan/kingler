@@ -4,6 +4,7 @@ import './App.css';
 import Button from './components/Button';
 import Categories from './components/Categories';
 import Navbar from './components/Navbar';
+import Products from './components/Products';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 <Navbar/>
 <Button/>
 <Categories/>
+<Products/>
 </>
   );
 }
