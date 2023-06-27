@@ -1,21 +1,26 @@
-body{
+body {
     background-color: #121215;
 }
-.main-section{
+
+.main-section {
     display: flex;
-    height: 530px;
+    padding-bottom: 70px;
     padding-top: 70px;
-    padding-left: 150px ;
+    padding-left: 120px;
+    padding-right: 30px;
+    /* flex-wrap: wrap; */
 }
-.categories{
+
+.categories {
     display: flex;
 
     flex-direction: column;
     width: 300px;
-    min-width: 200px;
+    min-width: 330px;
     padding-right: 30px;
 }
-.categories a{
+
+.categories a {
     text-decoration: none;
     height: 49px;
     background-color: #1d1e23;
@@ -28,48 +33,60 @@ body{
     padding-bottom: 14px;
     border-bottom: 0.1px solid #282a2e;
 }
-.categories a:hover{
+
+.categories a:hover {
     color: #fea526;
 }
 
 
-.icon-categories{
+.icon-categories {
     font-size: 14px;
-    color:#fff;
+    color: #fff;
     margin-right: 10px;
 }
-.categories h1{
+
+.categories h1 {
     display: flex;
     align-items: center;
     color: #fff;
     height: 56px;
     background-color: #fea526;
-    margin-bottom:0 ;
+    margin-bottom: 0;
     font-size: 18px;
     padding-left: 14px;
 }
-.beretta{
-    background-image: url('https://res.cloudinary.com/dmqymruko/image/upload/v1687713423/beretta_hkfmyh.jpg');
+
+.beretta {
     width: 800px;
     height: 400px;
 }
-.beretta-text{
-text-align: center;
-padding-top: 60px;
-padding-right: 400px;
+
+.beretta-img {
+    position: absolute;
+    z-index: -1;
+    height: 400px;
 }
-.beretta-text h1{
+
+.beretta-text {
+    text-align: center;
+    padding-top: 60px;
+    padding-right: 400px;
+}
+
+.beretta-text h1 {
     font-size: 60px;
     font-weight: 700;
     color: #fff;
 }
-.beretta-text h4{
+
+.beretta-text h4 {
     color: #fff;
-    font-size: 22px; 
+    font-size: 22px;
     padding-bottom: 10px;
     font-weight: 400;
 }
-.beretta-text h3{
+
+.beretta-text h3 {
     font-size: 34px;
     padding-bottom: 15px;
     color: #fea526;
@@ -80,74 +97,531 @@ padding-right: 400px;
     width: 900px;
 
 } */
-.swiper-wrapper{
+.swiper-wrapper {
     width: 900px !important;
 }
-.steiner{
-    background-image: url('https://res.cloudinary.com/dmqymruko/image/upload/v1687769668/binocular_ciyuij.jpg');
+
+.steiner {
     width: 800px;
     height: 400px;
 }
-.steiner-text{
-text-align: center;
-padding-top: 60px;
-padding-left: 400px;
+
+.steiner-img {
+    position: absolute;
+    z-index: -1;
+    height: 400px;
 }
-.steiner-text h1{
+
+.steiner-text {
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 400px;
+}
+
+.steiner-text h1 {
     font-size: 60px;
     font-weight: 700;
     color: #fff;
 }
-.steiner-text h4{
+
+.steiner-text h4 {
     color: #FFF;
-    font-size: 22px; 
+    font-size: 22px;
     padding-bottom: 10px;
     font-weight: 400;
 }
-.steiner-text h3{
+
+.steiner-text h3 {
     font-size: 34px;
     padding-bottom: 15px;
     color: #fea526;
     font-weight: 700;
 }
 
-.special{
-    background-image: url('https://res.cloudinary.com/dmqymruko/image/upload/v1687769677/special_pjxwl8.jpg');
+.special {
     width: 800px;
     height: 400px;
 }
-.special-text{
-text-align: center;
-padding-top: 60px;
-padding-right: 400px;
+
+.special-img {
+    position: absolute;
+    z-index: -1;
+    height: 400px;
 }
-.special-text h1{
+
+.special-text {
+    text-align: center;
+    padding-top: 60px;
+    padding-right: 400px;
+}
+
+.special-text h1 {
     font-size: 60px;
     font-weight: 700;
     color: #fff;
 }
-.special-text h4{
+
+.special-text h4 {
     color: #fff;
-    font-size: 22px; 
+    font-size: 22px;
     padding-bottom: 10px;
     font-weight: 400;
 }
-.special-text h3{
+
+.special-text h3 {
     font-size: 34px;
     color: #fea526;
     font-weight: 700;
 }
-@media(max-width:1250px){
-    .main-section{
+
+@media(max-width:1150px) {
+    .main-section {
+        padding-top: 50px;
         padding-left: 50px;
+        padding-right: 20px;
+    }
+
+    .swiper-wrapper {
+        width: 600px !important;
+    }
+
+    .beretta-img img {
+        width: 600px;
+        height: 400px;
+    }
+
+    .special-img img {
+        width: 600px;
+        height: 400px;
+    }
+
+    .steiner-img img {
+        width: 600px;
+        height: 400px;
+    }
+
+    .beretta-text {
+        padding-top: 50px;
+        padding-right: 500px;
+    }
+
+    .beretta-text h1 {
+        font-size: 50px;
+    }
+
+    .beretta-text h4 {
+        font-size: 18px;
+        padding-bottom: 8px;
+        font-weight: 400;
+    }
+
+    .beretta-text h3 {
+        font-size: 30px;
+        padding-bottom: 12px;
+    }
+
+    .steiner-text {
+        text-align: center;
+        padding-top: 50px;
+        padding-left: 50px;
+
+    }
+
+    .steiner-text h1 {
+        font-size: 50px;
+    }
+
+    .steiner-text h4 {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+
+    .steiner-text h3 {
+        font-size: 30px;
+        padding-bottom: 12px;
+    }
+
+    .special-text {
+        padding-top: 50px;
+        padding-right: 500px;
+    }
+
+    .special-text h1 {
+        font-size: 45px;
+    }
+
+    .special-text h4 {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+
+    .special-text h3 {
+        font-size: 30px;
     }
 }
-@media(max-width:1150px){
-    /* .swiper-slide.swiper-slide-active{
-        width: 200px !important;
-        height: 200px !important;
-} */
-.mySwiper{
-    width: 500px;
+
+@media(max-width:900px) {
+    .main-section {
+        padding-bottom: 50px;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .categories {
+        width: 200px;
+        min-width: 150px;
+        padding-right: 20px;
+        height: 330px;
+    }
+
+    .categories a {
+        height: 40px;
+        padding-top: 12px;
+        padding-left: 12px;
+        width: 100%;
+        padding-bottom: 12px;
+    }
+
+    .swiper-wrapper {
+        width: 500px !important;
+    }
+
+    .steiner {
+        width: 500px;
+        height: 330px;
+    }
+
+    .beretta {
+        width: 500px;
+        height: 330px;
+    }
+
+    .special {
+        width: 500px;
+        height: 330px;
+    }
+
+    .beretta-img img {
+        width: 500px;
+        height: 330px;
+    }
+
+    .special-img img {
+        width: 500px;
+        height: 330px;
+    }
+
+    .steiner-img img {
+        width: 500px;
+        height: 330px;
+    }
+
+
+    .icon-categories {
+        font-size: 12px;
+        margin-right: 8px;
+    }
+
+    .categories h1 {
+        height: 48px;
+        font-size: 16px;
+        padding-left: 12px;
+    }
+
+    .beretta-text {
+        padding-top: 30px;
+        padding-right: 250px;
+    }
+
+    .beretta-text h1 {
+        font-size: 40px;
+    }
+
+    .beretta-text h4 {
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+
+    .beretta-text h3 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .steiner-text {
+        padding-top: 30px;
+        padding-left: 230px;
+
+    }
+
+    .steiner-text h1 {
+        font-size: 40px;
+    }
+
+    .steiner-text h4 {
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+
+    .steiner-text h3 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .special-text {
+        padding-top: 30px;
+        padding-right: 250px;
+    }
+
+    .special-text h1 {
+        font-size: 35px;
+    }
+
+    .special-text h4 {
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+
+    .special-text h3 {
+        font-size: 25px;
+    }
 }
+@media(max-width:700px){
+    .categories {
+        width: 500px;
+        min-width: 250px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    .main-section {
+        display: flex;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:500px){
+    .swiper-wrapper {
+        width: 400px !important;
+        height: 250px !important;
+    }
+
+    .steiner {
+        width: 400px;
+        height: 250px;
+    }
+
+    .beretta {
+        width: 400px;
+        height: 250px;
+    }
+
+    .special {
+        width: 400px;
+        height: 250px;
+    }
+
+    .beretta-img img {
+        width: 400px;
+        height: 330px;
+    }
+
+    .special-img img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .steiner-img img {
+        width: 400px;
+        height: 250px;
+    }
+    .categories {
+        width: 400px;
+        min-width: 250px;
+        padding-bottom: 10px;
+    }
+    .main-section{
+        padding-top: 10px;
+    }
+
+    .beretta-text {
+        padding-top: 30px;
+        padding-right: 250px;
+    }
+
+    .beretta-text h1 {
+        font-size: 30px;
+    }
+
+    .beretta-text h4 {
+        font-size: 13px;
+        padding-bottom: 3px;
+    }
+
+    .beretta-text h3 {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .steiner-text {
+        padding-top: 30px;
+        padding-left: 180px;
+
+    }
+
+    .steiner-text h1 {
+        font-size: 30px;
+    }
+
+    .steiner-text h4 {
+        font-size: 13px;
+        padding-bottom: 3px;
+    }
+
+    .steiner-text h3 {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    .special-text {
+        padding-top: 20px;
+        padding-right: 230px;
+    }
+
+    .special-text h1 {
+        font-size: 25px;
+    }
+
+    .special-text h4 {
+        font-size: 10px;
+        padding-bottom: 3px;
+    }
+
+    .special-text h3 {
+        font-size: 20px;
+    }
+}
+@media(max-width:380px){
+    .categories{
+        padding-bottom: 5px;
+        height: 300px;
+    }
+    .categories a {
+        height: 35px;
+        padding-top: 8px;
+        padding-left: 8px;
+        width: 100%;
+        padding-bottom: 8px;
+        font-size: 12px;
+    }
+    .icon-categories {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+
+    .categories h1 {
+        height: 40px;
+        font-size: 14px;
+        padding-left: 8px;
+    }
+
+    .swiper-wrapper {
+        width: 300px !important;
+        height: 200px !important;
+    }
+
+    .steiner {
+        width: 300px;
+        height: 200px;
+    }
+
+    .beretta {
+        width: 300px;
+        height: 200px;
+    }
+
+    .special {
+        width: 300px;
+        height: 200px;
+    }
+
+    .beretta-img img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .special-img img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .steiner-img img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    
+    .beretta-text {
+        padding-top: 30px;
+        padding-right: 180px;
+    }
+
+    .beretta-text h1 {
+        font-size: 18px;
+    }
+
+    .beretta-text h4 {
+        font-size: 10px;
+        padding-bottom: 0px;
+    }
+
+    .beretta-text h3 {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+
+    .steiner-text {
+        padding-top: 30px;
+        padding-left: 180px;
+
+    }
+
+    .steiner-text h1 {
+        font-size: 18px;
+    }
+
+    .steiner-text h4 {
+        font-size: 10px;
+        padding-bottom: 0px;
+    }
+
+    .steiner-text h3 {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+
+    .special-text {
+        padding-top: 30px;
+        padding-right: 150px;
+    }
+
+    .special-text h1 {
+        font-size: 18px;
+    }
+
+    .special-text h4 {
+        font-size: 10px;
+        padding-bottom: 0px;
+    }
+
+    .special-text h3 {
+        font-size: 15px;
+    }
+    .categories {
+        width: 300px;
+    }
 }

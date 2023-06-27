@@ -11,3 +11,21 @@
     color: #fff;
     background-color: #fea526;
 }
+@media(max-width:1150px){
+    .cg-button{
+        padding: 9px;
+        font-size:14px ;
+    }
+}
+@media(max-width:900px){
+    .cg-button{
+        padding: 7px;
+        font-size:12px ;
+    }
+}
+@media(max-width:500px){
+    .cg-button{
+        padding: 5px;
+        font-size:10px ;
+    }
+}

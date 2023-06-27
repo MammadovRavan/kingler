@@ -247,7 +247,12 @@
     background-color: #141518;
     padding: 0 30px;
 }
-
+.overlay> .navlinks>  .blog{
+    padding-left: 0 !important;
+}
+.overlay> .navlinks>  .pages{
+    padding-left: 0 !important;
+}
 .overlay h4 {
     padding-left: 10px;
     font-size: 16px;
@@ -262,13 +267,13 @@
 
 
 
-.navlinks {
+.overlay> .navlinks {
     display: flex;
     transition: .3s ease;
     flex-direction: column;
 }
 
-.navlinks a {
+.overlay> .navlinks a {
     display: flex;
     transition: .3s ease;
     font-size: 14px;
@@ -280,7 +285,7 @@
     align-items: center;
     padding-left: 30px;
 }
-.navlinks a:hover{
+.overlay> .navlinks a:hover{
 color: #fe8524;
 background-color: #141518;
 }
@@ -397,6 +402,7 @@ opacity:80%;
 position: fixed;
 width: 0;
     overflow-x: hidden;
+    z-index: 2;
 }
 .aktiv-overlay{
     width: 320px;
@@ -425,7 +431,7 @@ background-color: #000;
     .left-side img{
         width: 140px;
     }
-    .navlinks a{
+    .overlay> .navlinks a{
         font-size: 12px;
         height: 40px;
         margin-bottom: 1px;
@@ -509,7 +515,7 @@ background-color: #000;
         .aktiv-overlay{
             width: 210px;
         }
-        .navlinks a{
+        .overlay> .navlinks a{
             font-size: 11px;
             height: 30px;
             margin-bottom: .5px;

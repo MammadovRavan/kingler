@@ -42,6 +42,9 @@ const Categories = () => {
       }}>
         <SwiperSlide>      
           <div className="beretta">
+            <div className="beretta-img">
+              <img src="https://res.cloudinary.com/dmqymruko/image/upload/v1687713423/beretta_hkfmyh.jpg" alt="" />
+            </div>
             <div className="beretta-text">
               <h1>BERETTA</h1>
               <h4>MODEL 92 FS INOX</h4>
@@ -51,6 +54,9 @@ const Categories = () => {
           </div></SwiperSlide>
         <SwiperSlide>
         <div className="steiner">
+          <div className="steiner-img">
+            <img src="https://res.cloudinary.com/dmqymruko/image/upload/v1687769668/binocular_ciyuij.jpg" alt="" />
+          </div>
             <div className="steiner-text">
               <h1>STEINER</h1>
               <h4>AZ830 BINOCULAR</h4>
@@ -61,6 +67,9 @@ const Categories = () => {
         </SwiperSlide>
         <SwiperSlide>
         <div className="special">
+          <div className="special-img">
+            <img src="https://res.cloudinary.com/dmqymruko/image/upload/v1687769677/special_pjxwl8.jpg" alt="" />
+          </div>
             <div className="special-text">
               <h3>SPECIAL OFFER</h3>
               <h1>GET 25% OFF</h1>
