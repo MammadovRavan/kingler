@@ -6,6 +6,7 @@ import Categories from './components/Categories';
 import Countup from './components/CountUp';
 import GunsAmmo from './components/GunsAmmo';
 import Navbar from './components/Navbar';
+import PopularNews from './components/PopularNews';
 import Products from './components/Products';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 <Products/>
 <Countup/>
 <GunsAmmo/>
+<PopularNews/>
 </>
   );
 }

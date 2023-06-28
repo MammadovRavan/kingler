@@ -1,0 +1,166 @@
+.popularnews{
+    padding-top: 100px;
+    background-color: #1d1e23;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.popularnews> .left-side h1{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+}
+.popularnews> .left-side h1 span{
+    font-weight: 700;
+}
+.popularnews> .left-side img{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    /* padding-right: 30px; */
+}
+.popularnews> .left-side h2{
+    color: #fff;
+    font-size: 25px;
+}
+.popularnews> .left-side h3{
+    color: #525355;
+    font-size: 12px;
+}
+.popularnews> .left-side p{
+    color: #525355;
+    padding-top: 20px;
+    font-size: 14px;
+}
+.popularnews> .left-side h3 span{
+    color: #fea526;
+}
+.popularnews> .left-side{
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+.popularnews> .left-side{
+    width: 500px;
+    padding-right: 30px;
+    border-right: 1px solid #343539;
+}
+.popularnews> .right-side{
+    padding-left: 30px;
+    width: 500px;
+}
+.popularnews> .right-side> .popular-links{
+    padding-bottom: 57px;
+}
+
+.popularnews> .right-side> .popular-links a {
+    color: #b4b4b4;
+    font-size: 13px;
+    background-image: linear-gradient(to right,
+            #fe8524,
+            #fe8524 50%,
+            #b4b4b4 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.popularnews> .right-side> .popular-links a:before {
+    content: '';
+    background: #fe8524;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.popularnews> .right-side> .popular-links a:hover {
+    background-position: 0;
+
+}
+
+.popularnews> .right-side> .popular-links a:hover::before {
+    width: 100%;
+}
+.popularnews> .left-side button{
+    padding: 12px;
+   background-color: #fea526;
+   border: none;
+   color: #fff;
+   font-size: 16px;
+}
+@media(max-width:1018px){
+   .popularnews> .right-side{
+    width: 400px;
+   }
+   .popularnews> .left-side{
+    width: 400px;
+   }
+}
+@media(max-width:820px){
+    .popularnews> .right-side{
+        width: 300px;
+       }
+       .popularnews> .left-side{
+        width: 300px;
+       }
+       .popularnews> .right-side> .popular-links{
+        padding-bottom: 65px;
+    }
+}
+@media(max-width:617px){
+.popularnews> .left-side{
+    border-right: none;
+    padding: 0;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.popularnews{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+}
+.popularnews> .right-side{
+
+    padding: 0;
+    width: 100%;
+}
+.popularnews> .right-side> .popular-links{
+    padding-bottom: 20px;
+}
+}
+@media(max-width:380px){
+    .popularnews> .right-side> .popular-links a {
+        padding: 4px;
+        font-size: 12px;
+    }
+    .popularnews> .left-side h1{
+        font-size: 25px;
+    }
+    .popularnews> .left-side img{
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .popularnews> .left-side h2{
+        font-size: 16px;
+    }
+    .popularnews> .left-side h3{
+        font-size: 10px;
+    }
+    .popularnews> .left-side p{
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .popularnews> .left-side> .popular-btn button{
+        padding: 10px;
+        font-size: 10px;
+    }
+}
