@@ -4,6 +4,7 @@ import './App.css';
 import Button from './components/Button';
 import Categories from './components/Categories';
 import Countup from './components/CountUp';
+import GunsAmmo from './components/GunsAmmo';
 import Navbar from './components/Navbar';
 import Products from './components/Products';
 
@@ -15,6 +16,7 @@ function App() {
 <Categories/>
 <Products/>
 <Countup/>
+<GunsAmmo/>
 </>
   );
 }

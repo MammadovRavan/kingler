@@ -1,0 +1,189 @@
+.guns-ammo {
+    height: 545px;
+    /* min-width: 200px; */
+    display: flex;
+    overflow: hidden;
+    /* position: absolute; */
+}
+
+.guns-ammo>.ammo-img img {
+    height: 545px;
+    width: 100%;
+    min-width: 1400px;
+
+}
+
+.guns-ammo>.ammo-img {
+    position: absolute;
+    height: 545px;
+    display: flex;
+    /* min-width: 200px; */
+    width: 100%;
+    justify-content: center;
+    z-index: -1;
+    margin-left: auto;
+    overflow: hidden;
+
+}
+
+/* @media(max-width:900px){
+    .guns-ammo> .ammo-img{
+        width: 900px;
+    }
+} */
+
+
+.guns-ammo>.ammo-text {
+    position: absolute;
+    right: 0;
+    padding-left: 600px;
+    padding-right: 100px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* .ammo-text> .ammo-btn{
+    text-align: center;
+} */
+.ammo-text h1 {
+    font-size: 50px;
+    color: #fea526;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.ammo-text span {
+    font-weight: 700;
+}
+
+.ammo-text h2 {
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.ammo-text h3 {
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 30px;
+    color: #b4b4b4;
+}
+
+.learn-btn {
+    border: 1px solid #fea526;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fea526;
+    font-size: 16px;
+    transition: .4s ease;
+    /* width: 100px; */
+    font-weight: 400;
+}
+
+.learn-btn:hover {
+    color: #fff;
+    background-color: #fea526;
+}
+
+@media(max-width:1100px) {
+    .ammo-text h1 {
+        font-size: 45px;
+        padding-bottom: 18px;
+    }
+  
+
+    .ammo-text h2 {
+        font-size: 13px;
+        padding-bottom: 26px;
+
+    }
+
+    .ammo-text h3 {
+        font-size: 13px;
+        line-height: 22px;
+        padding-bottom: 26px;
+    }
+}
+
+@media(max-width:1023px) {
+    .guns-ammo>.ammo-text {
+        padding-top: 60px;
+    }
+}
+
+@media(max-width:950px) {
+    .guns-ammo>.ammo-text {
+        padding-left: 450px;
+        padding-right: 40px;
+    }
+    .learn-btn{
+        padding: 9px;
+        font-size:14px ;
+    }
+}
+
+@media(max-width:750px) {
+    .ammo-text h1 {
+        font-size: 40px;
+        padding-bottom: 16px;
+    }
+    .learn-btn{
+        padding: 8px;
+        font-size:13px ;
+    }
+
+    .ammo-text h2 {
+        font-size: 11px;
+        padding-bottom: 20px;
+
+    }
+
+    .ammo-text h3 {
+        font-size: 11px;
+        line-height: 18px;
+        padding-bottom: 20px;
+    }
+
+    .guns-ammo>.ammo-text {
+        padding-left: 350px;
+        padding-right: 20px;
+    }
+}
+
+@media(max-width:650px) {
+    .guns-ammo>.ammo-img img {
+        opacity: 40%;
+    }
+    .learn-btn{
+        padding: 7px;
+        font-size:12px ;
+    }
+
+    .guns-ammo>.ammo-text {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .ammo-text h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .ammo-text h2 {
+        font-size: 8px;
+        padding-bottom: 15px;
+
+    }
+.guns-ammo> .ammo-text{
+    padding-top: 100px;
+}
+    .ammo-text h3 {
+        font-size: 8px;
+        line-height: 15px;
+        padding-bottom: 15px;
+    }
+}
