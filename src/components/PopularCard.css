@@ -33,7 +33,7 @@ display: flex;
 }
 @media(max-width:380px){
     .pn-card{
-    flex-direction: column;
+    display: block;
     }
     .pn-card> .text-pn{
         padding-left: 0px;
