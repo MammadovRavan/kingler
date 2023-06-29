@@ -1,6 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
+import Business from './components/Business';
 import Button from './components/Button';
 import Categories from './components/Categories';
 import Countup from './components/CountUp';
@@ -19,6 +20,7 @@ function App() {
 <Countup/>
 <GunsAmmo/>
 <PopularNews/>
+<Business/>
 </>
   );
 }

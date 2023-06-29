@@ -1,0 +1,18 @@
+.business-section{
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+@media(max-width:576px){
+.business-section{
+    padding-left: 40px;
+}
+}
+
+@media(max-width:390px){
+    .business-section{
+        padding-left: 20px;
+        height: 123px;
+    }
+    }
