@@ -1,31 +1,13 @@
 .business-card {
-padding: 100px 0;
+padding: 60px 0;
+/* width: 142px; */
+text-align: center;
 }
-@media(max-width:880px){
-    .business-card {
-        padding: 80px 0;
-        }
-        .business-card img{
-            width: 200px;
-        }
-        
+.business-card img{
+    width: 142px;
 }
-@media(max-width:510px){
- .swiper> .swiper-initialized> .swiper-horizantal> .mySwiper{
-    height: 200px !important;
- }
-    }
-@media(max-width:600px){
-    .business-card {
+@media(max-width:700px){
+    .business-card{
         padding: 40px 0;
-        }
-        .business-card img{
-            width: 170px;
-        }
-}
-@media(max-width:390px){
-    .business-card {
-        padding: 30px 0;
-        }
-      
+    }
 }
