@@ -4,7 +4,9 @@ import './App.css';
 import Business from './components/Business';
 import Button from './components/Button';
 import Categories from './components/Categories';
+import Collection from './components/Collection';
 import Countup from './components/CountUp';
+import Footer from './components/Footer';
 import GunsAmmo from './components/GunsAmmo';
 import Navbar from './components/Navbar';
 import PopularNews from './components/PopularNews';
@@ -21,6 +23,8 @@ function App() {
 <GunsAmmo/>
 <PopularNews/>
 <Business/>
+<Collection/>
+<Footer/>
 </>
   );
 }

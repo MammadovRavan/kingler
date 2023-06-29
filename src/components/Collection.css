@@ -1,0 +1,48 @@
+.collection-section{
+padding: 100px 30px 40px 30px;
+display: flex;
+justify-content: center;
+background-color: #1d1e23;
+}
+.collection-section h1{
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+.collection-section h1 span{
+    color: #fea526;
+}
+.collection-section img{
+    width: 65px !important;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.collection-section h3{
+    color: #b4b4b4;
+    font-size: 14px;
+}
+.collection-section h4{
+    font-size: 14px;
+    color: #fea526;
+}
+.latest-card, .rated-card, .recent-card{
+    display: flex;
+    padding-bottom: 16px;
+}
+
+
+.collection-section> .left-side,.center-side,.right-sides{
+    width: 300px;
+    padding-bottom: 40px;
+}
+@media(max-width:636px){
+    .collection-section> .left-side,.center-side,.right-sides{
+        width: 500px;
+        padding-bottom: 40px;
+    }
+}
+@media(max-width:400px){
+    .collection-section{
+        padding: 50px 30px 10px 30px;
+    }
+}
