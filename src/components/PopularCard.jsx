@@ -4,7 +4,7 @@ const PopularCard = ({ikon,information,tarix,trspant}) => {
   return (
  
    <div className="pn-card">
-    <img src={ikon} alt="" />
+        <img src={ikon} alt="" />
     <div className="text-pn">
         <h1>{information}</h1>
         <h2>{tarix} <span>{trspant}</span></h2>

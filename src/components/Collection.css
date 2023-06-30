@@ -21,6 +21,9 @@ background-color: #1d1e23;
     color: #b4b4b4;
     font-size: 14px;
 }
+.collection-section h3:hover{
+    color: #fea526;
+}
 .collection-section h4{
     font-size: 14px;
     color: #fea526;

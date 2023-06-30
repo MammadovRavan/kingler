@@ -8,15 +8,14 @@
 }
 .kart img{
 width: 200px;
-
-
 }
+
 .kart h2{
     font-size: 14px;
     font-weight: 400;
-    transition: .3s ease;
     color: #1d1e23;
     padding-bottom: 15px;
+    cursor: pointer;
 }
 .kart h2:hover{
     color: #fea526;
@@ -24,4 +23,31 @@ width: 200px;
 .kart h3{
     font-size: 20px;
     font-weight: 700;
+}
+.kart> .kart-img{
+    position: relative;
+}
+.kart> .kart-img> .black-card{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: .3s ease;
+}
+.kart> .kart-img> .black-card:hover{
+opacity: 100%;
+}
+.kart> .kart-img> .black-card button{
+padding: 8px;
+background-color: #fea526;
+border: none;
+color: #fff;
+
+}
+.kart> .kart-img> .black-card button:hover{
+    background-color: #c28005;
 }
