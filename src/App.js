@@ -1,30 +1,27 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-import Business from './components/Business';
-import Button from './components/Button';
-import Categories from './components/Categories';
-import Collection from './components/Collection';
-import Countup from './components/CountUp';
-import Footer from './components/Footer';
-import GunsAmmo from './components/GunsAmmo';
-import Navbar from './components/Navbar';
-import PopularNews from './components/PopularNews';
-import Products from './components/Products';
+import Home from './components/Home';
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import NotFound from './components/NotFound';
+import About from './components/About';
+
 
 function App() {
   return (
 <>
-<Navbar/>
-<Button/>
-<Categories/>
-<Products/>
-<Countup/>
-<GunsAmmo/>
-<PopularNews/>
-<Business/>
-<Collection/>
-<Footer/>
+<BrowserRouter>
+<Routes>
+
+<Route path='/' element={<Home/>}/>
+<Route path='*' element={<NotFound/>}/>
+<Route path='/about' element={<About/>}/>
+
+
+</Routes>
+
+</BrowserRouter>
 </>
   );
 }

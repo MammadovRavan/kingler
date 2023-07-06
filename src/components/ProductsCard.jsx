@@ -1,6 +1,7 @@
 import React from 'react'
 import './ProductsCard.css'
 const ProductsCard = ({melumat,icon,qiymet}) => {
+  
   return (
     <div className='kart'>
  <div className="kart-img">

@@ -15,6 +15,8 @@ import { FaFacebookF } from 'react-icons/fa'
 import { TfiGoogle } from 'react-icons/tfi'
 import { TfiLinkedin } from 'react-icons/tfi'
 import { TfiTwitterAlt } from 'react-icons/tfi'
+
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   const overlayDivininRefi = useRef()
   const blackScreenRefi = useRef()
@@ -43,10 +45,10 @@ const Navbar = () => {
             <a href=''>PAGES</a>
           </div>
           <div className="products">
-            <a to="/products">PRODUCTS</a>
+            <a href=''>PRODUCTS</a>
           </div>
           <div className="promotion">
-            <a href=''>PROMOTION</a>
+            <a href>PROMOTION</a>
           </div>
           <div className="blog">
             <a href=''>BLOG</a>
@@ -185,7 +187,7 @@ const Navbar = () => {
 
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="#">PRODUCTS</a>
+                    <Link class="nav-link" to="/about">PRODUCTS</Link>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">PROMOTION</a>
