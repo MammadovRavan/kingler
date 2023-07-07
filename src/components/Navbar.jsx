@@ -180,7 +180,7 @@ const Navbar = () => {
                       <a href="#">ABOUT US</a>
                       <a href="#">OUR TEAM</a>
                       <a href="#">TEAM MEMBER</a>
-                      <a href="#">404 PAGE</a>
+                      <Link to="/error">404 PAGE</Link>
                       <a href="#">GALLERY</a>
                     </div>
                   </div>

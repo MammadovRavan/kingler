@@ -1,0 +1,213 @@
+.error-section>.error-top {
+    height: 115px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    color: #fff;
+}
+
+.error-section>.error-top h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.error-section>.error-bottom {
+    background-color: #1d1e23;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.error-section>.error-bottom h1 {
+    font-size: 291px;
+    color: #121215;
+}
+
+.error-section>.error-bottom>.error-position>.oops-error {
+    width: 77px;
+    height: 77px;
+    /* border: 2px solid black; */
+    background-color: #fea526;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80px;
+}
+
+.error-section>.error-bottom>.error-position {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error-bottom h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.error-bottom h2 span {
+    font-weight: 700;
+}
+
+.error-bottom h3 {
+    font-size: 14px;
+    color: #808080;
+    letter-spacing: 3px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+.error-bottom h3 span {
+    color: #fea526;
+}
+
+.search-error input {
+    width: 260px;
+    padding: 15px;
+    color: #808080;
+    background-color: #000;
+    border-radius: none;
+    outline: none;
+    border: 1px #000;
+}
+
+.search-error {
+    padding-bottom: 100px;
+}
+
+@media(max-width:700px) {
+    .error-section>.error-top {
+        height: 90px;
+        padding-left: 80px;
+    }
+
+    .error-section>.error-top h1 {
+        font-size: 15px;
+    }
+
+    .error-section>.error-bottom h1 {
+        font-size: 200px;
+    }
+    .error-section>.error-bottom>.error-position>.oops-error{
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+        top: 60px;
+    }
+    .error-section>.error-bottom>.error-position{
+        width: 380px;
+    }
+    .error-bottom h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .error-bottom h3 {
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 21px;
+        padding-bottom: 20px;
+    }
+    .search-error input {
+        width: 240px;
+        padding: 12px;
+        font-size: 14px;
+    }
+    .search-error {
+        padding-bottom: 80px;
+    }
+}
+@media(max-width:500px){
+    .error-section>.error-top {
+        height: 80px;
+        padding-left: 50px;
+    }
+
+    .error-section>.error-top h1 {
+        font-size: 13px;
+    }
+
+    .error-section>.error-bottom h1 {
+        font-size: 150px;
+    }
+    .error-section>.error-bottom>.error-position>.oops-error{
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+        top: 50px;
+    }
+    .error-section>.error-bottom>.error-position{
+        width: 280px;
+    }
+    .error-bottom h2 {
+        font-size: 25px;
+        padding-bottom:15px;
+    }
+    .error-bottom h3 {
+        font-size: 11px;
+        letter-spacing: 2px;
+        line-height: 17px;
+        padding-bottom: 15px;
+    }
+    .search-error input {
+        width: 220px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .search-error {
+        padding-bottom: 60px;
+    }
+}
+@media(max-width:400px){
+    .error-section>.error-top {
+        height: 80px;
+        display: flex;
+        
+    }
+
+    .error-section>.error-top h1 {
+        font-size: 13px;
+    }
+
+    .error-section>.error-bottom h1 {
+        font-size: 150px;
+    }
+    .error-section>.error-bottom>.error-position>.oops-error{
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+        top: 50px;
+    }
+    .error-section>.error-bottom>.error-position{
+        width: 280px;
+    }
+    .error-bottom h2 {
+        font-size: 25px;
+        padding-bottom:15px;
+    }
+    .error-bottom h3 {
+        font-size: 11px;
+        letter-spacing: 2px;
+        line-height: 17px;
+        padding-bottom: 15px;
+    }
+    .search-error input {
+        width: 220px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .search-error {
+        padding-bottom: 60px;
+    }
+}
