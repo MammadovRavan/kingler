@@ -187,7 +187,7 @@ const Navbar = () => {
 
                   
                   <li class="nav-item">
-                    <Link class="nav-link" to="/about">PRODUCTS</Link>
+                    <Link class="nav-link" to="/nvproducts">PRODUCTS</Link>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">PROMOTION</a>

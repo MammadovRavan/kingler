@@ -6,6 +6,7 @@ import Home from './components/Home';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import NotFound from './components/NotFound';
 import About from './components/About';
+import ProductsNavbar from './components/ProductsNavbar';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 <Route path='/error' element={<NotFound/>}/>
 <Route path='*' element={<NotFound/>}/>
 <Route path='/about' element={<About/>}/>
+<Route path='/nvproducts' element={<ProductsNavbar/>}/>
 
 
 </Routes>
