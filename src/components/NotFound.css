@@ -173,41 +173,45 @@
     .error-section>.error-top {
         height: 80px;
         display: flex;
-        
+        padding-left: 0;
+        justify-content: center;
     }
 
     .error-section>.error-top h1 {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .error-section>.error-bottom h1 {
-        font-size: 150px;
+        font-size: 120px;
     }
     .error-section>.error-bottom>.error-position>.oops-error{
-        width: 40px;
-        height: 40px;
-        font-size: 10px;
-        top: 50px;
+        width: 30px;
+        height: 30px;
+        font-size: 8px;
+        top: 40px;
     }
     .error-section>.error-bottom>.error-position{
-        width: 280px;
+        width: 210px;
     }
     .error-bottom h2 {
-        font-size: 25px;
+        font-size: 20px;
         padding-bottom:15px;
+        padding: 0 15px;
     }
     .error-bottom h3 {
-        font-size: 11px;
-        letter-spacing: 2px;
-        line-height: 17px;
-        padding-bottom: 15px;
+        font-size: 9px;
+        letter-spacing: 1px;
+        line-height: 13px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .search-error input {
-        width: 220px;
-        padding: 10px;
-        font-size: 12px;
+        width: 160px;
+        padding: 8px;
+        font-size: 10px;
     }
     .search-error {
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
 }
