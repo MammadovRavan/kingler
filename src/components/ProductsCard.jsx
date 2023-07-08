@@ -7,7 +7,7 @@ const ProductsCard = ({melumat,icon,qiymet}) => {
  <div className="kart-img">
     <img src={icon} alt="" />
     <div className="black-card">
-      <button>ADD TO CARD</button>
+      <button>Get in shop</button>
     </div>
     </div>
     

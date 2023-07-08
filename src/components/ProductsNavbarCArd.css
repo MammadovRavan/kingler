@@ -1,29 +1,95 @@
-.pr-card img{
+.pr-card img {
     width: 168px;
     display: flex;
     margin-right: auto;
     margin-left: auto;
 }
-.pr-card h1{
+.pr-card> .kart-img{
+    position: relative;
+}
+.pr-card> .kart-img> .black-card{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: .3s ease;
+}
+.pr-card> .kart-img> .black-card:hover{
+opacity: 100%;
+}
+.pr-card> .kart-img> .black-card button{
+padding: 8px;
+background-color: #fea526;
+border: none;
+color: #fff;
+
+}
+.pr-card> .kart-img> .black-card button:hover{
+    background-color: #c28005;
+}
+
+.pr-card h1 {
     color: #1d1e23;
     font-size: 14px;
     font-weight: 400;
 }
-.pr-card h2{
+
+.pr-card h2 {
     font-size: 20px;
     color: #1d1e23;
 }
-.pr-card{
+
+.pr-card {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 260px;
     border: 1px solid #f7f7f7;
     background-color: #fff;
-margin: 10px;
+    margin: 10px;
 }
-@media(max-width:970px){
-    .pr-card{
+
+
+
+@media(max-width:970px) {
+    .pr-card {
         width: 220px;
+    }
+}
+
+@media(max-width:580px) {
+    .pr-card{
+        width: 550px;
+        min-width: 200px;
+    }
+    .pr-card img {
+        width: 220px;
+        min-width: 150px;
+    }
+    .pr-card h1{
+        font-size: 18px;
+    }
+    .pr-card h2{
+        font-size: 25px;
+    }
+}
+@media(max-width:380px){
+    .pr-card{
+        width: 550px;
+        min-width: 200px;
+    }
+    .pr-card img {
+        width: 200px;
+        min-width: 150px;
+    }
+    .pr-card h1{
+        font-size: 16px;
+    }
+    .pr-card h2{
+        font-size: 22px;
     }
 }
