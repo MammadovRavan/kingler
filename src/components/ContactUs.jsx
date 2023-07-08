@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import Footer from './Footer';
 import Navbar from './Navbar';
@@ -6,20 +7,8 @@ import { GrFacebookOption } from 'react-icons/gr'
 import { TiSocialGooglePlus } from 'react-icons/ti'
 import { BiLogoTwitter } from 'react-icons/bi'
 import { BiLogoLinkedin } from 'react-icons/bi'
+import Form from './Form'
 const ContactUs = () => {
-    const istifadeciAdi = document.getElementsByClassName('name')[0]
-    const elektronPoct = document.getElementsByClassName('email')
-    const movzu = document.getElementsByClassName('subject')
-    const mesaj = document.getElementsByClassName('message')
-    const formElementi = document.getElementsByClassName('form-right')
-    console.log(istifadeciAdi)
-    //show error message
-    function xetaniGoster(qutu, messaj) {
-        const formControlDivi = qutu.parentElement
-        formControlDivi.className += "error"
-    }
-    xetaniGoster(istifadeciAdi)
-
     return (
         <>
             <Navbar />
@@ -61,24 +50,9 @@ const ContactUs = () => {
                             </div>
                         </div>
                         <div className="form-right">
-                            <div className="forms">
-                                <input type="text" placeholder='Name' className='name' id='name' />
-                                <small>Error message</small>
-                            </div>
-                            <div className="forms">
-                                <input type="text" placeholder='E-mail' className='email' id='email' />
-                                <small>Error message</small>
-                            </div>
-                            <div className="forms">
-                                <input type="text" placeholder='Subject' className='subject' id='subject' />
-                                <small>Error message</small>
-                            </div>
-                            <div className="forms">
-                                <input type="text" placeholder='Message' className='message' id='message' />
-                                <small>Error message</small>
-                            </div>
-                            <button>Submit</button>
+                            <Form/>
                         </div>
+
                     </div>
                 </div>
             </div>
