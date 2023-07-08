@@ -5,6 +5,8 @@ import './ProductsNavbar.css'
 import {ImCross} from 'react-icons/im'
 import {BsFillSquareFill} from 'react-icons/bs'
 import Button from './Button'
+import MaplenecekElementler from '../ProductsNavbar.json'
+import ProductsNavbarCard from './ProductsNavbarCard';
 const ProductsNavbar = () => {
   return (
   <>
@@ -80,7 +82,19 @@ const ProductsNavbar = () => {
 </div>
 </div>
 <div className="bottom-right">
+<div className="df-sorting">
 
+</div>
+<div className="json-card">
+  
+  {
+    MaplenecekElementler.map(birmelumat=>(
+<ProductsNavbar
+ikon={birmelumat.}
+/>
+    ))
+  }
+</div>
 </div>
   </div>
 </div>

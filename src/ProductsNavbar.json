@@ -1,0 +1,75 @@
+[
+    {
+        "id":1,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787585/nv1_g9fffn.jpg",
+        "text":"17HMR 17GR Varmint Tip 200RDS",
+        "cost":" $400.00"
+    },
+    {
+        "id":2,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787581/nv14_rt2wmh.jpg",
+        "text":"All Hazards 1911-22-OD Nitro Sanndstone Bag",
+        "cost":"$385.00"
+    },
+    {
+        "id":3,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787581/nv12_fuvzgm.jpg",
+        "text":"Beretta JMN9S15CTC BU9 Nano 6+1 9mm 3.07″",
+        "cost":"$120.00"
+    },
+    {
+        "id":4,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787581/nv16_bweuih.jpg",
+        "text":"Beretta JMN9S15CTC BU9 Nano 6+1 9mm 3.07″ w/",
+        "cost":"$637.00"
+    },
+    {
+        "id":5,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787581/nv12_fuvzgm.jpg",
+        "text":"Federal Fusion 308WIN 180GR SP 20RDS",
+        "cost":"$647.00"
+    },
+    {
+        "id":6,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787581/nv18_tiummb.jpg",
+        "text":"Fiocchi Rifle Shootinh Dynamics 308WIN 150 FMJ",
+        "cost":"$329.00"
+    },
+    {
+        "id":7,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787581/nv11_qgeuoe.jpg",
+        "text":"Glock Double 9mm 3.4″ 6+1 FS Integral",
+        "cost":"$821.00"
+    },
+    {
+        "id":8,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787582/nv7_tkkx6q.jpg",
+        "text":"Glock G43 43 9MM 6+1 Fixed Sights",
+        "cost":"$256.00"
+    },
+    {
+        "id":9,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787581/nv13_vpgeob.jpg",
+        "text":"Glock PI4350201 G43 Double 9mm 3.4″ 6+1 FS",
+        "cost":"$423.00"
+    },
+    {
+        "id":10,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787581/nv13_vpgeob.jpg",
+        "text":"Glock PI4350201 G43 Double 9mm 3.4″ FS",
+        "cost":"$498.00"
+    },
+    {
+        "id":11,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787581/nv15_fk84j2.jpg",
+        "text":"Hi-Point Compact 9mm 3.5″ 8+1 Black Poly Grip/Frame",
+        "cost":" $ 400.00"
+    },
+    {
+        "id":12,
+        "icn":"https://res.cloudinary.com/dmqymruko/image/upload/v1688787581/nv15_fk84j2.jpg",
+        "text":"Hi-Point Compact 9mm 3.5″ Black Poly Grip/Frame Black",
+        "cost":"$251.00"
+    }
+
+]
