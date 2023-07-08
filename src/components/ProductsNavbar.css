@@ -236,6 +236,10 @@ width: 870px;
     .nvproducts-section>.nvproducts-top h1 {
         font-size: 14px;
     }
+    .nv-filter{
+        padding: 35px 39px;
+        border:none;
+    }
     
     .nvproducts-section>.nvproducts-top h2 {
         font-size: 14px;
