@@ -28,41 +28,6 @@
     padding-bottom: 100px;
 }
 
-.full-form>.forms> .name, .email, .subject {
-    width: 650px;
-    padding: 14px;
-    margin-bottom: 10px;
-    outline: none;
-    border: none;
-    background-color: #121215;
-    color: #808080;
-    font-size: 16px;
-}
-
-.full-form> .forms> .message {
-    width: 650px;
-    height: 150px;
-    padding: 14px;
-    margin-bottom: 10px;
-    outline: none;
-    border: none;
-    background-color: #121215;
-    color: #808080;
-    font-size: 16px;
-}
-
-.form-right button {
-    width: 150px;
-    height: 50px;
-    color: #fff;
-    background-color: #fea526;
-    border: none;
-    margin-top: 20px;
-}
-
-.form-right button:hover {
-    background-color: #fe8905;
-}
 
 .contact-section {
     background-color: #1d1e23;
@@ -127,31 +92,4 @@
 .personal-media {
     color: #fff;
     margin: 10px;
-}
-.forms{
-    position: relative;
-}
-.forms small{
-color: #fff;
-position: absolute;
-left: 10px;
-border-radius: 5px;
-width: 200px;
-background-color:rgb(146, 4, 4) ;
-bottom: 0;
-padding: 4px;
-visibility: hidden;
-}
-.forms input{
-    border: 1px solid rgb(0, 0, 0);
-}
-.forms.success input {
-    border-color: rgb(0, 131, 20);   
-}
-.forms.error input {
-    border-color: rgb(146, 4, 4);
- 
-}
-.forms.error small{
-    visibility: visible;
 }
