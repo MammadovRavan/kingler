@@ -1,0 +1,29 @@
+.pr-card img{
+    width: 168px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pr-card h1{
+    color: #1d1e23;
+    font-size: 14px;
+    font-weight: 400;
+}
+.pr-card h2{
+    font-size: 20px;
+    color: #1d1e23;
+}
+.pr-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 260px;
+    border: 1px solid #f7f7f7;
+    background-color: #fff;
+margin: 10px;
+}
+@media(max-width:970px){
+    .pr-card{
+        width: 220px;
+    }
+}

@@ -25,10 +25,12 @@
     padding-top: 80px;
     background-image: url('https://res.cloudinary.com/dmqymruko/image/upload/v1687860291/white_yh5uu4.jpg');
     background-attachment: fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .nvproducts-bottom> .bottom-left{
     width: 300px;
+    height: 1295px;
+    margin-left: 20px;
 }
 
 .nvproducts-bottom h1 {
@@ -164,6 +166,52 @@ padding-left: 20px;
 }
 .product-tags> .nv-gear, .nv-hunting, .nv-rifle{
     padding-bottom: 10px;
+}
+.nvproducts-bottom{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+}
+.nvproducts-bottom> .bottom-right{
+    padding-left: 30px;
+width: 870px;
+}
+.json-card{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 510px;
+}
+@media(max-width:1248px){
+    .nvproducts-bottom> .bottom-right{
+    width: 590px;
+    }
+}
+@media(max-width:970px){
+    .nvproducts-bottom> .bottom-right{
+        width: 510px;
+        }
+}
+@media(max-width:890px){
+    .nvproducts-bottom> .bottom-right{
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 0;
+        }
+        .nvproducts-bottom> .bottom-left{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            height: auto;
+            justify-content: center;
+            margin: 0;
+
+        }
+        .json-card{
+            justify-content: center;
+        }
 }
 
 

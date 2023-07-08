@@ -85,12 +85,14 @@ const ProductsNavbar = () => {
 <div className="df-sorting">
 
 </div>
-<div className="json-card">
+<div className="json-card ">
   
   {
     MaplenecekElementler.map(birmelumat=>(
-<ProductsNavbar
-ikon={birmelumat.}
+<ProductsNavbarCard
+ikon={birmelumat.icn}
+information={birmelumat.text}
+cost={birmelumat.cost}
 />
     ))
   }
