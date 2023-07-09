@@ -1,13 +1,15 @@
-.forms span{
+.forms span {
     color: #fff;
     padding: 5px;
 
 }
-.form-text span{
-    color: #fff; 
+
+.form-text span {
+    color: #fff;
     padding: 5px;
 }
-.form-text textarea{
+
+.form-text textarea {
     background-color: #121215;
     border: 1px solid rgba(0, 0, 0, 0);
     width: 650px;
@@ -15,7 +17,8 @@
     height: 160px;
     color: #b4b4b4;
 }
-.forms input{
+
+.forms input {
     background-color: #121215;
     border: 1px solid rgba(0, 0, 0, 0);
     width: 650px;
@@ -24,35 +27,119 @@
     color: #b4b4b4;
     outline: none;
 }
-.forms{
+
+.forms {
     position: relative;
 }
-.form-text{
+
+.form-text {
     position: relative;
 }
-.error{
+
+.error {
     position: absolute;
     left: 10px;
     bottom: 0;
-    background-color: rgb(135, 5, 5);   
+    background-color: rgb(135, 5, 5);
     border-radius: 3px;
     width: 200px;
 }
-.form-button button{
+
+.form-button button {
     width: 150px;
     padding: 15px;
     background-color: #fea526;
     color: #fff;
     border: none;
 }
-.form-button button:hover{
+
+.form-button button:hover {
     background-color: #fe8905;
 }
-.form-button{
+
+.form-button {
     padding-top: 40px;
 }
-.success{
+
+.success {
     padding-top: 20px;
     font-size: 18px;
     font-weight: 700;
+}
+
+@media(max-width:1000px) {
+    .form-text textarea {
+        width: 500px;
+        padding: 13px;
+        height: 140px;
+    }
+
+    .forms input {
+        width: 500px;
+        padding: 13px;
+    }
+}
+
+.form-button button {
+    width: 140px;
+    padding: 13px;
+    font-size: 15px;
+}
+.error{
+    font-size: 13px;
+}
+
+.form-button {
+    padding-top: 30px;
+}
+@media(max-width:745px){
+    .form-text textarea {
+        width: 400px;
+        padding: 11px;
+        height: 120px;
+    }
+
+    .forms input {
+        width: 400px;
+        padding: 11px;
+        font-size:15px;
+        margin-bottom: 5px;
+    }
+    .form-button button {
+        width: 120px;
+        padding: 11px;
+        font-size: 13px;
+    }
+    
+    .form-button {
+        padding-top: 15px;
+      
+    }
+    .error{
+        width: 150px;
+        left: 8px;
+        font-size: 12px;
+    }
+    .success {
+        padding-top: 15px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:600px){
+    .forms input{
+        width: 100%;
+        margin-bottom: 3px;
+    }
+    .form-text textarea{
+        width: 100%;
+    }
+
+}
+@media(max-width:400px){
+    .form-button button {
+        width: 100px;
+        padding: 10px;
+        font-size: 10px;
+    }
 }
