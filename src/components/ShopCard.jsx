@@ -1,18 +1,22 @@
-import React from 'react'
-import './ShopCard.css'
-const ShopCard = ({image,information,qiymet}) => {
+// ShopCard.js
+
+import React, { useState } from 'react';
+import './ShopCard.css';
+
+const ShopCard = ({ image, information, qiymet, addToCart }) => {
   return (
     <div className='shopcard'>
-        <div className="kart-img">
+      <div className="kart-img">
         <img src={image} alt="" />
         <div className="black-card">
-      <button>BUY</button>
-    </div>
+          <button onClick={addToCart}>BUY</button>
         </div>
-        <h1>{information}</h1>
-        <h2>{qiymet}</h2>
+      </div>
+      <h1>{information}</h1>
+      <h2>{qiymet}</h2>
     </div>
-  )
-}
+  );
+};
 
-export default ShopCard
+export default ShopCard;
+
