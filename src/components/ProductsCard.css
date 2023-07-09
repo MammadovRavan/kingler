@@ -41,13 +41,13 @@ width: 200px;
 .kart> .kart-img> .black-card:hover{
 opacity: 100%;
 }
-.kart> .kart-img> .black-card button{
+.kart> .kart-img> .black-card a{
 padding: 8px;
 background-color: #fea526;
 border: none;
 color: #fff;
-
+text-decoration: none;
 }
-.kart> .kart-img> .black-card button:hover{
+.kart> .kart-img> .black-card a:hover{
     background-color: #c28005;
 }

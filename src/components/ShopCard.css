@@ -1,0 +1,49 @@
+.shopcard img{
+    width: 170px;
+}
+.shopcard h1{
+    font-size: 14px;
+    font-weight: 400;
+   color: #1d1e23;
+}
+.shopcard h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d1e23;
+}
+.shopcard{
+    width: 210px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #eaeaeb;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+}
+.shopcard> .kart-img{
+    position: relative;
+}
+.shopcard> .kart-img> .black-card{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: .3s ease;
+}
+.shopcard> .kart-img> .black-card:hover{
+opacity: 100%;
+}
+.shopcard> .kart-img> .black-card button{
+padding: 8px;
+background-color: #fea526;
+border: none;
+color: #fff;
+width: 150px;
+text-decoration: none;
+}
+.shopcard> .kart-img> .black-card button:hover{
+    background-color: #c28005;
+}

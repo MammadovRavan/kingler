@@ -21,12 +21,15 @@
 .pr-card> .kart-img> .black-card:hover{
 opacity: 100%;
 }
-.pr-card> .kart-img> .black-card button{
+.pr-card> .kart-img> .black-card a{
 padding: 8px;
 background-color: #fea526;
 border: none;
 color: #fff;
-
+text-decoration: none;
+}
+.pr-card> .kart-img> .black-card a:hover{
+    background-color: #c28005;
 }
 .pr-card> .kart-img> .black-card button:hover{
     background-color: #c28005;

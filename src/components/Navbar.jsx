@@ -39,7 +39,7 @@ const Navbar = () => {
         {/* <button><RxCrossCircled /></button> */}
         <div className="navlinks">
           <div className="home">
-            <a href=''>HOME</a>
+            <Link to='/'>HOME</Link>
           </div>
           <div className="pages">
             <a href=''>PAGES</a>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <a href=''>BLOG</a>
           </div>
           <div className="contact">
-            <a href=''>CONTACT US</a>
+            <Link to='/contact'>CONTACT US</Link>
           </div>
 
         </div>
@@ -117,7 +117,12 @@ const Navbar = () => {
           <div className="left-side">
             <img src="https://res.cloudinary.com/dmqymruko/image/upload/v1687584196/kingler-logo_glwhpo.png" alt="" />
           </div>
+          <div className="overblack-img">
           <HiOutlineShoppingCart className='image' />
+          <div className="overblack-image">
+            <Link to='/shop' href="">shop</Link>
+          </div>
+          </div>
           <div className="right-side">
             <div className="shipping">
               <div className="img text-white">
@@ -147,6 +152,9 @@ const Navbar = () => {
               <div className="text">
                 <h5>Your cart</h5>
                 <h6>2 items-$941.00</h6>
+                <div className="overblack">
+                  <Link to='/shop' href="">mm</Link>
+                </div>
               </div>
             </div>
           </div>

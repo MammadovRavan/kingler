@@ -16,6 +16,7 @@
     padding: 14px;
     height: 160px;
     color: #b4b4b4;
+    outline: none;
 }
 
 .forms input {
@@ -85,14 +86,16 @@
     padding: 13px;
     font-size: 15px;
 }
-.error{
+
+.error {
     font-size: 13px;
 }
 
 .form-button {
     padding-top: 30px;
 }
-@media(max-width:745px){
+
+@media(max-width:745px) {
     .form-text textarea {
         width: 400px;
         padding: 11px;
@@ -102,41 +105,46 @@
     .forms input {
         width: 400px;
         padding: 11px;
-        font-size:15px;
+        font-size: 15px;
         margin-bottom: 5px;
     }
+
     .form-button button {
         width: 120px;
         padding: 11px;
         font-size: 13px;
     }
-    
+
     .form-button {
         padding-top: 15px;
-      
+
     }
-    .error{
+
+    .error {
         width: 150px;
         left: 8px;
         font-size: 12px;
     }
+
     .success {
         padding-top: 15px;
         font-size: 16px;
     }
 }
 
-@media(max-width:600px){
-    .forms input{
+@media(max-width:600px) {
+    .forms input {
         width: 100%;
         margin-bottom: 3px;
     }
-    .form-text textarea{
+
+    .form-text textarea {
         width: 100%;
     }
 
 }
-@media(max-width:400px){
+
+@media(max-width:400px) {
     .form-button button {
         width: 100px;
         padding: 10px;

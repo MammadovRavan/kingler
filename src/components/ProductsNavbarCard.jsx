@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './ProductsNavbarCArd.css'
 const ProductsNavbarCard = ({ikon,information,cost}) => {
   return (
@@ -6,7 +7,7 @@ const ProductsNavbarCard = ({ikon,information,cost}) => {
         <div className="kart-img">
         <img src={ikon} alt="" />
         <div className="black-card">
-        <button href=""> Get in shop</button>
+        <Link to='/shop' href=""> Get in shop</Link>
         </div>
         </div>
         

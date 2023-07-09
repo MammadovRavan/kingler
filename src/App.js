@@ -8,6 +8,7 @@ import NotFound from './components/NotFound';
 import About from './components/About';
 import ProductsNavbar from './components/ProductsNavbar';
 import ContactUs from './components/ContactUs';
+import Shop from './components/Shop';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 <Route path='/about' element={<About/>}/>
 <Route path='/nvproducts' element={<ProductsNavbar/>}/>
 <Route path='/contact' element={<ContactUs/>}/>
+<Route path='/shop' element={<Shop/>}/>
 
 
 </Routes>

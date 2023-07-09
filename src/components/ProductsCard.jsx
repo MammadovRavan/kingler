@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './ProductsCard.css'
 const ProductsCard = ({melumat,icon,qiymet}) => {
   
@@ -7,7 +8,7 @@ const ProductsCard = ({melumat,icon,qiymet}) => {
  <div className="kart-img">
     <img src={icon} alt="" />
     <div className="black-card">
-      <button>Get in shop</button>
+      <Link to='/shop'>Get in shop</Link>
     </div>
     </div>
     

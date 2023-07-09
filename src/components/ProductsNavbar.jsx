@@ -9,7 +9,6 @@ import MaplenecekElementler from '../ProductsNavbar.json'
 import ProductsNavbarCard from './ProductsNavbarCard';
 import { BiChevronDown } from 'react-icons/bi'
 import Collection from './Collection';
-import { Link } from 'react-router-dom';
 const ProductsNavbar = () => {
   return (
     <>
