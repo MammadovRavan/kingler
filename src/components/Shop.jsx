@@ -1,64 +1,87 @@
-// Shop.js
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Shop.css';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import Collection from './Collection';
-import MapleNecekElementler from '../ShopCard.json';
+import MaplenecekElementler from '../ShopCard.json';
 import ShopCard from './ShopCard';
 
 const Shop = () => {
   const [cartItems, setCartItems] = useState([]);
 
+  useEffect(() => {
+    const savedCartItems = sessionStorage.getItem('cartItems');
+    if (savedCartItems) {
+      setCartItems(JSON.parse(savedCartItems));
+    }
+  }, []);
+
+  useEffect(() => {
+    sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
+  }, [cartItems]);
+
   const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
+    setCartItems((prevCartItems) => [...prevCartItems, item]);
   };
 
-  const removeFromCart = (index) => {
-    const updatedCartItems = [...cartItems];
-    updatedCartItems.splice(index, 1);
-    setCartItems(updatedCartItems);
+  const removeFromCart = (item) => {
+    setCartItems((prevCartItems) => prevCartItems.filter((cartItem) => cartItem !== item));
+  };
+
+  const clearCart = () => {
+    setCartItems([]);
   };
 
   return (
     <>
       <Navbar />
       <div className="shop-section">
-        <div className="shop-left">
-          {MapleNecekElementler.map((birmelumat, index) => (
+        <div className="shop-left ">
+          {MaplenecekElementler.map((birmelumat) => (
             <ShopCard
-              key={index}
               image={birmelumat.ikon}
               information={birmelumat.title}
               qiymet={birmelumat.cost}
-              addToCart={() => addToCart(birmelumat)}
+              addToCart={addToCart}
+              key={birmelumat.id}
             />
           ))}
         </div>
+        <div className='shop-right cart-section'>
         <div className="shop-right">
-          <h1>Shopping Cart</h1>
+          <h1>Your Cart <span>//</span></h1>
           {cartItems.length === 0 ? (
-            <p>Your cart is empty.</p>
+            <p>Cart is empty.</p>
           ) : (
             <ul>
               {cartItems.map((item, index) => (
                 <li key={index}>
-                  <h2>{item.title}</h2>
-                  <button onClick={() => removeFromCart(index)}>Remove</button>
+                  <div className='cart-info'>
+                  <h1>{item.information}</h1>
+                  </div>
+                  <div className='cart-cost'>
+                  <h2>{item.qiymet}</h2>
+                  </div>
+                  <button onClick={() => removeFromCart(item)} className="remove-btn">Remove from list</button>
                 </li>
               ))}
             </ul>
           )}
-          {cartItems.length > 0 && (
-            <button onClick={() => setCartItems([])}>Clear Cart</button>
-          )}
+          <button onClick={clearCart}>Clear cart</button>
         </div>
+        </div>
+        
+        
       </div>
-      {/* <Collection/>
-      <Footer /> */}
+      <Collection/>
+      <Footer />
     </>
   );
 };
 
 export default Shop;
+
+
+
+
+

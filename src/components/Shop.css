@@ -1,11 +1,158 @@
-.shop-section{
+.shop-section {
     background-image: url('https://res.cloudinary.com/dmqymruko/image/upload/v1687860291/white_yh5uu4.jpg');
     background-attachment: fixed;
-
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
 }
-.shop-left{
+
+.shop-right.cart-section {
+    padding: 0;
+    margin: 0;
+}
+
+.shop-left {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    width: 700px;
 }
+
+.shop-right {
+    background-color: #121215;
+    height: 1000px;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.shop-right h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+.shop-right h1 span {
+    color: #fea526;
+}
+
+.shop-right p {
+    color: #808080;
+}
+
+.shop-right button {
+    background-color: #fea526;
+    border: none;
+    padding: 5px;
+    color: #fff;
+}
+
+.shop-right button:hover {
+    background-color: #ca7600;
+}
+
+.cart-info h1 {
+    font-size: 18px;
+}
+
+.cart-cost h2 {
+    font-size: 20px;
+}
+
+.shop-right li {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.shop-right ul {
+    padding: 20px;
+}
+
+.cart-section {
+    overflow-y: scroll;
+    max-height: 100vh;
+    /* İhtiyaçlarınıza göre maksimum yüksekliği ayarlayın */
+}
+
+.cart-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cart-section::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.cart-section::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+@media(max-width:1097px) {
+    .shop-left {
+        width: 500px;
+    }
+
+    .shop-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+@media(max-width:850px) {
+    .shop-right {
+        width: 300px;
+    }
+
+    .shop-right h1 {
+        font-size: 25px;
+    }
+
+    .shop-right p {
+        font-size: 14px;
+    }
+
+    .cart-info h1 {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .cart-cost h2 {
+        font-size: 14px;
+    }
+
+    .shop-right ul {
+        padding: 10px;
+    }
+
+    .shop-right button {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:700px) {
+    .shop-left {
+        width: 250px;
+    }
+}
+@media(max-width:487px) {
+    .shop-section{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .shop-right{
+        width: 100%;
+        }
+        .shop-left{
+            width: 100%;
+        }
+        .cart-info h1 {
+            font-size: 16px;
+            width: 240px;
+        }
+        .cart-cost h2 {
+            font-size: 16px;
+        }
+    }

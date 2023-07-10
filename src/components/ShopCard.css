@@ -47,3 +47,23 @@ text-decoration: none;
 .shopcard> .kart-img> .black-card button:hover{
     background-color: #c28005;
 }
+@media(max-width:850px){
+    .shopcard img{
+        width: 140px;
+    }
+    .shopcard h1{
+        font-size: 12px;
+    }
+    .shopcard h2{
+        font-size: 16px;
+    }
+    .shopcard{
+        width: 190px;
+    }
+}
+@media(max-width:487px){
+    .shopcard{
+        width: 100%;
+        margin-right: 0;
+    }
+}
