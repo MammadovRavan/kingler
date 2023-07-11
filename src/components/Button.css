@@ -67,8 +67,8 @@
 }
 @media(max-width:500px){
     .cg-button{
-        padding: 5px;
-        font-size:10px ;
+        padding: 3px;
+        font-size:8px ;
     }
 
 }

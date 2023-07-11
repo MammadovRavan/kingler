@@ -9,6 +9,7 @@ import About from './components/About';
 import ProductsNavbar from './components/ProductsNavbar';
 import ContactUs from './components/ContactUs';
 import Shop from './components/Shop';
+import OurTeam from './components/OurTeam';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 <Route path='/nvproducts' element={<ProductsNavbar />} />
 <Route path='/contact' element={<ContactUs />} />
 <Route path='/shop' element={<Shop />} />
+<Route path='/ourteam' element={<OurTeam />} />
 </Routes>
 
    

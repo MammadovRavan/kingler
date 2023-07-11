@@ -10,14 +10,14 @@ const Shop = () => {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    const savedCartItems = sessionStorage.getItem('cartItems');
+    const savedCartItems = localStorage.getItem('cartItems');
     if (savedCartItems) {
       setCartItems(JSON.parse(savedCartItems));
     }
   }, []);
 
   useEffect(() => {
-    sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 
   const addToCart = (item) => {
@@ -25,7 +25,9 @@ const Shop = () => {
   };
 
   const removeFromCart = (item) => {
-    setCartItems((prevCartItems) => prevCartItems.filter((cartItem) => cartItem !== item));
+    setCartItems((prevCartItems) =>
+      prevCartItems.filter((cartItem) => cartItem !== item)
+    );
   };
 
   const clearCart = () => {
@@ -47,33 +49,38 @@ const Shop = () => {
             />
           ))}
         </div>
-        <div className='shop-right cart-section'>
-        <div className="shop-right">
-          <h1>Your Cart <span>//</span></h1>
-          {cartItems.length === 0 ? (
-            <p>Cart is empty.</p>
-          ) : (
-            <ul>
-              {cartItems.map((item, index) => (
-                <li key={index}>
-                  <div className='cart-info'>
-                  <h1>{item.information}</h1>
-                  </div>
-                  <div className='cart-cost'>
-                  <h2>{item.qiymet}</h2>
-                  </div>
-                  <button onClick={() => removeFromCart(item)} className="remove-btn">Remove from list</button>
-                </li>
-              ))}
-            </ul>
-          )}
-          <button onClick={clearCart}>Clear cart</button>
+        <div className="shop-right cart-section">
+          <div className="shop-right">
+            <h1>
+              Your Cart <span>//</span>
+            </h1>
+            {cartItems.length === 0 ? (
+              <p>Cart is empty.</p>
+            ) : (
+              <ul>
+                {cartItems.map((item, index) => (
+                  <li key={index}>
+                    <div className="cart-info">
+                      <h1>{item.information}</h1>
+                    </div>
+                    <div className="cart-cost">
+                      <h2>{item.qiymet}</h2>
+                    </div>
+                    <button
+                      onClick={() => removeFromCart(item)}
+                      className="remove-btn"
+                    >
+                      Remove from list
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <button onClick={clearCart}>Clear cart</button>
+          </div>
         </div>
-        </div>
-        
-        
       </div>
-      <Collection/>
+      <Collection />
       <Footer />
     </>
   );

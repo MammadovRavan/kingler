@@ -45,7 +45,7 @@ const Navbar = () => {
             <a href=''>PAGES</a>
           </div>
           <div className="products">
-            <a href=''>PRODUCTS</a>
+            <Link to='/nvproducts'>PRODUCTS</Link>
           </div>
           <div className="promotion">
             <a href>PROMOTION</a>
@@ -186,7 +186,7 @@ const Navbar = () => {
                       <a href="#">TYPOGRAPHY</a>
                       <a href="#">SHORTCODES</a>
                       <a href="#">ABOUT US</a>
-                      <a href="#">OUR TEAM</a>
+                      <Link to="/ourteam">OUR TEAM</Link>
                       <a href="#">TEAM MEMBER</a>
                       <Link to="/error">404 PAGE</Link>
                       <a href="#">GALLERY</a>

@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "img":"https://res.cloudinary.com/dmqymruko/image/upload/v1689054412/team2_k1hfdq.jpg",
+        "name":"Joel Warren",
+        "work":"owner",
+        "information":"Joel Warren owner Ut enim ad minim veniam, quis nostrud exer tation ullamco laboris nisi ut aliquip ex ea.."
+    }, {
+        "id":2,
+        "img":"https://res.cloudinary.com/dmqymruko/image/upload/v1689054412/team3_i1kifk.jpg",
+        "name":"Andre French",
+        "work":"sales manager",
+        "information":"Andre French sales manager Ut enim ad minim veniam, quis nostrud exer tation ullamco laboris nisi ut.."
+    }, {
+        "id":3,
+        "img":"https://res.cloudinary.com/dmqymruko/image/upload/v1689054412/team4_aetelh.jpg",
+        "name":"Earl Marshall",
+        "work":"sales manager",
+        "information":"Earl Marshall sales manager Ut enim ad minim veniam, quis nostrud exer tation ullamco laboris nisi ut.."
+    }, {
+        "id":4,
+        "img":"https://res.cloudinary.com/dmqymruko/image/upload/v1689054412/team2_k1hfdq.jpg",
+        "name":"Dale Adams",
+        "work":"sales manager",
+        "information":"Dale Adams sales manager Ut enim ad minim veniam, quis nostrud exer tation ullamco laboris nisi ut aliquip.."
+    }
+]

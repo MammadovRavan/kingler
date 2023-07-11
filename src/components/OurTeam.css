@@ -1,0 +1,345 @@
+
+.team-top{
+    height: 115px;
+    background-color: #121215;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 100px;
+}
+.team-top h1{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.team-top h2{
+font-size: 18px;
+font-weight: 400;
+color: #fff;
+}
+.team-top h2 span{
+    font-weight: 300;
+}
+
+.team-spirit{
+    padding: 120px 30px;
+    background-color: #1d1e23;
+}
+.spirit-text h1{
+    color: #fea526;
+    font-size: 30px;
+padding-bottom: 40px;
+}
+.spirit-text h1 span{
+    font-weight: 300;
+}
+.spirit-text p{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+.spirit-text h4{
+    color: #fea526;
+    font-size: 14px;
+}
+.radix{
+    color: #fff;
+    font-size: 100px;
+    opacity: 50%;
+}
+.spirit-text{
+    position: relative;
+    padding-right: 40px;
+}
+.radix-icon{
+    position: absolute;
+    top: 40px;
+}
+.spirit-img img{
+    width: 500px;
+}
+.team-spirit{
+    display: flex;
+    justify-content: center;
+}
+.our-team{
+    background-color: #121215;
+    padding: 120px 30px;
+}
+.our-team-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.our-team-text h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+}
+.our-team-text h1 span{
+    font-weight: 300;
+}
+.our-team-text h2{
+    color: #fea526;
+    font-size: 30px;
+    font-weight: 700;
+}
+.our-team-text p{
+    color: #808080;
+    font-size: 14px;
+    letter-spacing: 3px;
+line-height: 22px;
+}
+.our-team-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media(max-width:1050px){
+    .team-top{
+        height: 90px;
+        padding: 0 90px;
+    }
+    .team-spirit{
+        padding: 110px 30px;
+    }
+    .spirit-text h1{
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+    .spirit-text p{
+        font-size: 30px;
+        padding-top: 13px;
+    }
+    .spirit-text h4{
+        font-size: 13px;
+    }
+    .radix{
+        font-size: 90px;
+    }
+    .radix-icon{
+        top: 30px;
+    }
+    .spirit-img img{
+        width: 400px;
+    }
+    .our-team{
+        padding: 110px 30px;
+    }
+    .our-team-text h1{
+        font-size: 45px;
+    }
+    .our-team-text h2{
+        font-size: 25px;
+    }
+    .our-team-text p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+@media(max-width:890px){
+    .team-top{
+        height: 80px;
+        padding: 0 70px;
+    }
+    .team-spirit{
+        padding: 100px 30px;
+    }
+    .spirit-text h1{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .spirit-text p{
+        font-size: 25px;
+        padding-top: 12px;
+    }
+    .spirit-text h4{
+        font-size: 12px;
+    }
+    .radix{
+        font-size: 80px;
+    }
+    .radix-icon{
+        top: 25px;
+    }
+    .spirit-img img{
+        width: 300px;
+    }
+    .our-team{
+        padding: 100px 30px;
+    }
+    .our-team-text h1{
+        font-size: 40px;
+    }
+    .our-team-text h2{
+        font-size: 20px;
+    }
+    .our-team-text p{
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 2px;
+    }
+}
+@media(max-width:725px){
+    .team-top{
+        height: 70px;
+        padding: 0 60px;
+    }
+    .team-spirit{
+        padding: 90px 30px;
+    }
+    .spirit-text h1{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    .spirit-text p{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .spirit-text h4{
+        font-size: 10px;
+    }
+    .radix{
+        font-size: 70px;
+    }
+    .radix-icon{
+        top: 20px;
+    }
+    .spirit-img img{
+        width: 200px;
+    }
+    .our-team{
+        padding: 90px 30px;
+    }
+    .our-team-text h1{
+        font-size: 35px;
+    }
+    .our-team-text h2{
+        font-size: 15px;
+    }
+    .our-team-text p{
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 2px;
+    }
+    .team-top h1{
+        font-size: 17px;
+    }
+    .team-top h2{
+    font-size: 17px;
+    }
+}
+@media(max-width:580px){
+    .spirit-text{
+        min-width: 297px;
+    }
+    .team-top{
+        height: 70px;
+        padding: 0 50px;
+    }
+    .team-top h1{
+        font-size: 16px;
+    }
+    .team-top h2{
+    font-size: 16px;
+    }
+    .spirit-text{
+        padding-right: 0;
+    }
+    .team-spirit{
+        flex-wrap: wrap;
+        padding: 70px 30px;
+    }
+    .spirit-text h1{
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+    .spirit-text p{
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    .spirit-text h4{
+        font-size: 15px;
+    }
+    .radix{
+        font-size: 80px;
+    }
+    .radix-icon{
+        top: 30px;
+    }
+    .spirit-img img{
+        padding-top: 20px;
+        width: 350px;
+    }
+    .our-team{
+        padding: 70px 30px;
+    }
+    .our-team-text h1{
+        font-size: 40px;
+    }
+    .our-team-text h2{
+        font-size: 20px;
+    }
+    .our-team-text p{
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 2px;
+    }
+}
+@media(max-width:428px){
+    .spirit-text{
+        min-width: 200px;
+    }
+    .team-top{
+        height: 60px;
+        padding: 0 30px;
+    }
+    .team-top h1{
+        font-size: 13px;
+    }
+    .team-top h2{
+    font-size: 13px;
+    }
+    .team-spirit{
+        flex-wrap: wrap;
+        padding: 60px 30px;
+    }
+    .spirit-text h1{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .spirit-text p{
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 7px;
+    }
+    .spirit-text h4{
+        font-size: 11px;
+    }
+    .radix{
+        font-size: 60px;
+    }
+    .radix-icon{
+        top: 18px;
+    }
+    .spirit-img img{
+        padding-top: 20px;
+        width: 250px;
+    }
+    .our-team{
+        padding: 50px 30px;
+    }
+    .our-team-text h1{
+        font-size: 30px;
+    }
+    .our-team-text h2{
+        font-size: 20px;
+    }
+    .our-team-text p{
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 1px;
+    }
+}

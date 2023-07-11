@@ -13,9 +13,13 @@
     font-weight: 700;
 }
 
-.nvproducts-section>.nvproducts-top h2 {
+.nvproducts-section>.nvproducts-top h2  {
     font-weight: 400px;
     font-size: 18px;
+}
+.nvproducts-section>.nvproducts-top a{
+text-decoration: none;
+color: #fff;
 }
 
 .nvproducts-section>.nvproducts-top h2 span {
