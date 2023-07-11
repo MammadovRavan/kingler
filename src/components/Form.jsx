@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
-import './Form.css'
+import React, { useState, useRef } from 'react';
+import './Form.css';
+import emailjs from '@emailjs/browser';
+
 const Form = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: '',
     email: '',
     subject: '',
     message: ''
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState('');
 
@@ -26,7 +30,9 @@ const Form = () => {
       setSuccessMessage('');
     } else {
       setErrors({});
-      setSuccessMessage('Message sent succesfully!');
+      setSuccessMessage('Message sent successfully!');
+      sendEmail();
+      resetForm();
     }
   };
 
@@ -40,14 +46,14 @@ const Form = () => {
 
     // Email validation (required and valid email format)
     if (!data.email) {
-      errors.email = 'Email is required';
+      errors.email = 'email is required';
     } else if (!/\S+@\S+\.\S+/.test(data.email)) {
-      errors.email = 'Email is invalid';
+      errors.email = 'email is required';
     }
 
     // Subject validation (required field)
     if (!data.subject) {
-      errors.subject = 'Subject is required';
+      errors.subject = 'subject is required';
     }
 
     // Message validation (required field)
@@ -58,70 +64,90 @@ const Form = () => {
     return errors;
   };
 
+  const resetForm = () => {
+    setFormData(initialFormData);
+  };
+
+  const SERVICE_ID = 'service_ev41or7';
+  const TEMPLATE_ID = 'template_urykfyi';
+  const USER_ID = 'A10GopRMnUg4-CGxd';
+
+  const form = useRef();
+
+  const sendEmail = () => {
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+  };
+
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} ref={form}>
       <div className='forms'>
         <input
-        placeholder='Name'
+          placeholder='Name'
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
           style={{ borderColor: errors.name ? 'red' : '' }}
         />
-<div className="error"> 
-       {errors.name && <span>{errors.name}</span>}
-</div>
+        <div className="error">
+          {errors.name && <span>{errors.name}</span>}
+        </div>
       </div>
 
       <div className='forms'>
         <input
-        placeholder='E-mail'
+          placeholder='E-mail'
           type="text"
           name="email"
           value={formData.email}
           onChange={handleChange}
           style={{ borderColor: errors.email ? 'red' : '' }}
         />
-<div className="error">
-{errors.email && <span>{errors.email}</span>}
-</div>
+        <div className="error">
+          {errors.email && <span>{errors.email}</span>}
+        </div>
       </div>
 
       <div className='forms'>
         <input
-        placeholder='Subject'
+          placeholder='Subject'
           type="text"
           name="subject"
           value={formData.subject}
           onChange={handleChange}
           style={{ borderColor: errors.subject ? 'red' : '' }}
         />
-      <div className="error">
-      {errors.subject && <span>{errors.subject}</span>}
-      </div>
+        <div className="error">
+          {errors.subject && <span>{errors.subject}</span>}
+        </div>
       </div>
 
       <div className='form-text'>
         <textarea
-        placeholder='Message'
+          placeholder='Message'
           name="message"
           value={formData.message}
           onChange={handleChange}
           style={{ borderColor: errors.message ? 'red' : '' }}
         />
-      <div className="error">
-      {errors.message && <span>{errors.message}</span>}
-      </div>
+        <div className="error">
+          {errors.message && <span>{errors.message}</span>}
+        </div>
       </div>
 
       <div className="form-button">
-      <button type="submit">SEND MESSAGE</button>
+        <button type="submit">SEND MESSAGE</button>
       </div>
 
-<div className="success">
-{successMessage && <div style={{ color: 'green' }}>{successMessage}</div>}
-</div>
+      <div className="success">
+        {successMessage && <div style={{ color: 'green' }}>{successMessage}</div>}
+      </div>
     </form>
   );
 };
