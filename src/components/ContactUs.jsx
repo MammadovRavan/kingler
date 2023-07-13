@@ -8,6 +8,7 @@ import { TiSocialGooglePlus } from 'react-icons/ti'
 import { BiLogoTwitter } from 'react-icons/bi'
 import { BiLogoLinkedin } from 'react-icons/bi'
 import Form from './Form'
+import { Link } from 'react-router-dom';
 const ContactUs = () => {
     return (
         <>
@@ -15,7 +16,7 @@ const ContactUs = () => {
             <div className="contact-section">
                 <div className="contact-top">
                     <h1>CONTACT US</h1>
-                    <h2>HOME /<span>CONTACT US</span></h2>
+                    <h2><Link to="/">HOME /</Link><span>CONTACT US</span></h2>
                 </div>
                 <div className="contact-bottom">
                     <div className="contact-text">

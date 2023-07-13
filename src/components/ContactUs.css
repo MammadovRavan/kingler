@@ -11,6 +11,10 @@
     font-size: 18px;
     font-weight: 700;
 }
+.contact-top a{
+text-decoration: none;
+color: #fff;
+}
 
 .contact-section>.contact-top h2 {
     font-weight: 400px;

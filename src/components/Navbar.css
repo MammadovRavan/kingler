@@ -300,7 +300,7 @@
     transition: .3s ease;
     font-size: 14px;
     text-decoration: none;
-    color: #b4b4b4;
+    color: #b4b4b4 !important;
     margin-bottom: 2px;
     background-color: #1d1e23;
     height: 50px;
@@ -308,7 +308,7 @@
     padding-left: 30px;
 }
 .overlay> .navlinks a:hover{
-color: #fe8524;
+color: #fe8524 !important;
 background-color: #141518;
 }
 .login a {

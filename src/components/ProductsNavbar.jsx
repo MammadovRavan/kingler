@@ -9,6 +9,7 @@ import MaplenecekElementler from '../ProductsNavbar.json'
 import ProductsNavbarCard from './ProductsNavbarCard';
 import { BiChevronDown } from 'react-icons/bi'
 import Collection from './Collection';
+import { Link } from 'react-router-dom';
 const ProductsNavbar = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const ProductsNavbar = () => {
       <div className="nvproducts-section">
         <div className="nvproducts-top">
           <h1>SHOP</h1>
-          <h2>HOME /<span>SHOP</span></h2>
+          <h2><Link to="/">HOME /</Link><span>SHOP</span></h2>
         </div>
         <div className="nvproducts-bottom">
           <div className="bottom-left">

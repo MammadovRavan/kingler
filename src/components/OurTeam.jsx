@@ -6,6 +6,7 @@ import MaplenecekElementler from '../TeamCard.json'
 import TeamCard from './TeamCard';
 import {RiDoubleQuotesR} from 'react-icons/ri'
 import Business from './Business';
+import { Link } from 'react-router-dom';
 const OurTeam = () => {
     return (
         <>
@@ -13,7 +14,7 @@ const OurTeam = () => {
             <div className='team-section'>
                 <div className="team-top">
                     <h1>OUR TEAM</h1>
-                    <h2>HOME /<span>OUR TEAM</span></h2>
+                    <h2><Link to="/">HOME /</Link><span>OUR TEAM</span></h2>
                 </div>
                 <div className="team-bottom">
                     <div className="team-spirit">

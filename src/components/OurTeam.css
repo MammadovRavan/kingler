@@ -12,6 +12,10 @@
     font-size: 18px;
     font-weight: 700;
 }
+.team-top a{
+    text-decoration: none;
+    color: #fff;
+}
 .team-top h2{
 font-size: 18px;
 font-weight: 400;
