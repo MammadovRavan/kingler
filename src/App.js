@@ -10,6 +10,8 @@ import OurTeam from './components/OurTeam';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import MyComponents from './components/MyComponent';
+import MyComponent from './components/MyComponent';
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -41,6 +43,9 @@ function App() {
             <Route path='/contact' element={<ContactUs />} />
             <Route path='/shop' element={<Shop />} />
             <Route path='/ourteam' element={<OurTeam />} />
+            <Route path='/promotion' element={<MyComponent />} />
+
+
           </Routes>
         </BrowserRouter>
       )}
